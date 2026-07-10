@@ -19,6 +19,12 @@ app.get("/",(req,res)=>{
 });
 
 
+app.use((err,req,res,next)=>{
+    console.dir(err,{depth:null, colors:true});
+    const {status=500,message="Internal Server Error"}=err;
+    res.status(status).json({ success: false, message: message });
+})
+
 // DB Connection
 connect(); // since the functions are hoisted in js
 async function connect(){
