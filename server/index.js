@@ -13,9 +13,11 @@ const PORT = process.env.PORT || 4000;
 const DBURL = process.env.DBURL || "mongodb://localhost:27017/blog-app"
 
 app.use(e.json());
+app.use(cookieParser(process.env.COOKIE_SECRET));
 
 
 app.use('/articles',articleRouter);
+app.use('/auth',authRouter);
 
 // get route for testing the server running or not
 app.get("/",(req,res)=>{
