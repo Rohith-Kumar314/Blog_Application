@@ -1,0 +1,7 @@
+export class ExpressError extends Error{
+    constructor(status,message){
+        super();//calls the constructor of the parent class
+        this.status = status;
+        this.message = message;
+    }
+}

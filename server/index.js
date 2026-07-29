@@ -1,7 +1,11 @@
 import e from "express";
 import mongoose from "mongoose";
+import cookieParser from 'cookie-parser';
 import { config } from "dotenv";
+
 import { articleRouter } from "./routes/articleRouter.js";
+import { authRouter } from "./routes/authRoutes.js";
+
 config();
 
 const app = e();
