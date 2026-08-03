@@ -1,9 +1,51 @@
-<div class="bg-gray-300 h-16 max-w-full flex justify-between items-center">
-    <div>
-        <h1 class="font-extrabold font-serif text-5xl">LOGO</h1>
+<header
+  class="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-gradient-to-r from-indigo-900/35 via-blue-900/30 to-cyan-900/35 border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+>
+  <nav class="h-20 max-w-7xl mx-auto px-8 flex items-center justify-between">
+    <!-- Logo -->
+    <a
+      routerLink="/"
+      class="text-4xl font-black tracking-tight bg-gradient-to-r from-white via-cyan-200 to-cyan-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+    >
+      Blogify
+    </a>
+
+    <!-- Navigation -->
+    <div class="hidden md:flex items-center gap-10">
+      <a
+        routerLink="/"
+        routerLinkActive="text-cyan-300"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-white/90 font-medium hover:text-cyan-300 transition duration-300"
+      >
+        Home
+      </a>
+
+      <a
+        routerLink="/blogs"
+        routerLinkActive="text-cyan-300"
+        class="text-white/90 font-medium hover:text-cyan-300 transition duration-300"
+      >
+        Blogs
+      </a>
+
+      <a
+        routerLink="/about"
+        routerLinkActive="text-cyan-300"
+        class="text-white/90 font-medium hover:text-cyan-300 transition duration-300"
+      >
+        About
+      </a>
+
+      <a
+        routerLink="/auth/login"
+        class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-white font-semibold shadow-lg shadow-cyan-500/30 hover:scale-105 hover:shadow-cyan-400/50 transition-all duration-300"
+      >
+        Sign In
+      </a>
     </div>
-    <div class="flex justify-evenly w-1/3">
-        <a routerLink="">Home</a>
-        <a routerLink="/auth/login">login</a>
-    </div>
-</div>
+
+    <!-- Mobile Menu -->
+    <button class="md:hidden text-white text-3xl">☰</button>
+  </nav>
+</header>

@@ -1,0 +1,62 @@
+<br>
+<hr><br><br>
+<hr>
+<!-- <h2 class="text-2xl font-sans">Property Binding</h2> -->
+<img [src]="imgURL" alt="Image through Property Binding" class="h-1/4 w-1/2">
+
+<h2 class="text-2xl font-serif font-extrabold">Signals in Angular</h2>
+<h2 class="text-2xl font-serif font-extrabold">Normal Signals: {{number()}}  </h2>
+<h2 class="text-2xl font-serif font-extrabold">Computed Signals: {{multiple()}}</h2>
+
+<h2 class="text-2xl font-serif font-extrabold">Signals 2: {{signal2()}}</h2>
+<h2 class="text-2xl font-serif font-extrabold">Normal Number</h2>
+
+<Button (click)="updateSignal()" class="rounded-2xl border-0 bg-blue-400">Increment</Button>
+<Button (click)="incrementSignal2()" class="rounded-2xl border-0 bg-blue-400 border-2 border-green-600">Increment Signal 2</Button>
+
+
+
+
+
+
+
+
+
+
+<!-- <h2 class="text-2xl font-sans">class & Style Binding</h2>
+
+<div [style.backgroundColor]="isActive ? 'red' : 'green'" [innerText]="isActive ? 'hello':'Bye' " class="h-10 w-10"
+    (click)="isActive = !isActive">
+
+</div>
+
+<h2 class="text-2xl font-sans">Event Binding Binding</h2>
+<button class="border border-amber-900 bg-amber-500 rounded-e-md" (click)="clickHandler($event)">Click Event</button>
+<h2 class="bg-black">. .</h2>
+
+<h2 class="text-3xl font-bold font-serif underline decoration-indigo-600 decoration-dotted">Input Handling</h2>
+<div class="border-4 px-8 border-cyan-500 rounded-md">
+    <h2 class="text-sm font-extrabold font-serif">with (event.target as HTMLInputElement).value</h2>
+    <h2 class="font-bold font-serif text-xl">Input value {{mail}}</h2>
+    <label for="email">Email : </label>
+    <input type="text" (input)="handleInput($event)" placeholder="youremail@domain.com" class="border rounded px-8"
+        name="email">
+</div>
+
+<br>
+
+<div class="border-4 px-8 border-cyan-500 rounded-md">
+    <h2 class="text-sm font-extrabold font-serif">with referencing </h2>
+    <h2 class="font-bold font-serif text-xl">Input value with referencing:  {{mail}}</h2>
+    <label for="email">Email : </label>
+    <input type="text" #emailInput (input)="mail=emailInput.value" placeholder="youremail@domain.com" class="border rounded px-8"
+        name="email">
+</div>
+
+<div class="border-4 px-8 border-cyan-500 rounded-md">
+    <h2 class="text-sm font-extrabold font-serif">with Two-Way Binding</h2>
+    <h2 class="font-bold font-serif text-xl">Input value 2-Binding:  {{mail}}</h2>
+    <label for="email">Email : </label>
+    <input type="text" placeholder="youremail@domain.com" class="border rounded px-8"
+        name="email" [(ngModel)]="mail">
+</div> -->
